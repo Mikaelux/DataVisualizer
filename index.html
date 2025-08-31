@@ -1,10 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: #fff;
+            color: #000;
+            font-family: "Courier New", Courier, monospace;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        input, button, select {
+            background: none;
+            color: #000;
+            border: 2px solid #000;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            margin: 0.5rem 0;
+            font-family: inherit;
+            appearance: none;
+        }
+
+        button:hover, select:hover, input:focus {
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+
+        td, th {
+            border: 2px solid #000;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        #output{
+            margin: 2rem;
+            border: 2px dashed #000;
+            padding: 1rem;
+            min-height: 50px;
+        }
+
+        #temp{
+            margin-top: 2rem;
+            border: 2px dashed #000;
+            padding: 1rem;
+            min-height: 50px;
+            display: inline;
+        }
+
+        label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+            font-weight: bold;
+        }
+
+        ::selection {
+            background: #000;
+            color: #fff;
+        }
+
+        * {
+            box-sizing: border-box;
+            box-shadow: 2px 2px 0 0 black, 2px 2px 0 0 black;
+        }
+
+        html {
+            scroll-behavior: auto;
+        }
+    </style>
+
 </head>
 <body>
-$END$
+Enter Array elements :
+<input type="number" id="arrayElement">
+<button value="Submit" id="arrayAdd"> Add </button>
+<label for="sortSelect">Choose an action:</label>
+<select id="sortSelect">
+    <option value="bubble"> Bubble sort </option>
+    <option value="select"> Selection sort </option>
+    <option value="insert"> Insertion sort </option>
+    <option value="merge"> Merge sort </option>
+    <option value="heap"> Heap sort </option>
+</select>
+<button onclick="sortArray()"> Sort Array </button>
+
+<div id="output">
+</div>
+
+<div id="temp">
+
+</div>
+
+<button id="reset" value="reset" onclick="resetArr()"> Reset </button>
+
+<script language="JavaScript" src="index.js">
+</script>
 </body>
 </html>
