@@ -1,0 +1,4 @@
+- Educational sorting algorithm visualizer in planning
+- Currently only 5 array algorithms + temporary css
+- Future plans: more algorithms, dynamic tree construction and sorting, graph algorithms
+- POtentially : Encryption algorithms and fourier transform
